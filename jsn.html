@@ -1,0 +1,136 @@
+<!doctydive html>
+<html>
+<head>
+	<title>Hai2~</title>
+	
+	<style>
+		#frame {
+			width: auto;
+			height: 74px;
+		}
+	
+		#mat1 {
+			display: inline-block;
+			margin-right: 22.3px;
+		}
+		
+		#plus {
+			display: inline-block;
+			position: absolute;
+			margin-top: 18px;
+			margin-left: -22px;
+		}
+		
+		#mat2 {
+			display: inline-block;
+		}
+	
+		#mat1 div {
+			display: inline-block;
+			text-align: center;
+			padding-top: auto;
+			padding-bottom: auto;
+			width: auto;
+			height: auto;
+			font-size: 30px;
+			align-content: center;
+			margin: 5px 5px 5px 5px;
+		}
+		
+		#mat2 div {
+			display: inline-block;
+			text-align: center;
+			padding-top: auto;
+			padding-bottom: auto;
+			width: auto;
+			height: auto;
+			font-size: 30px;
+			align-content: center;
+			margin: 5px 5px 5px 5px;
+		}
+		
+		#equal {
+			display: inline-block;
+			position: absolute;
+			margin-top: 18px;
+			margin-left: -1px;
+		}
+		
+		#mat3 {
+			display: inline-block;
+			margin-left: 20px;
+		}
+		
+		#mat3 div {
+			display: inline-block;
+			text-align: center;
+			padding-top: auto;
+			padding-bottom: auto;
+			width: auto;
+			height: auto;
+			font-size: 30px;
+			align-content: center;
+			margin: 5px 5px 5px 5px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="frame">
+		<div id="mat1">
+			<div id="a"></div>
+			<div id="b"></div><br/>
+			<div id="c"></div>
+			<div id="d"></div>
+		</div>
+		<h1 id="plus">+</h1>
+		<div id="mat2">
+			<div id="a2"></div>
+			<div id="b2"></div><br/>
+			<div id="c2"></div>
+			<div id="d2"></div>
+		</div>
+		<h1 id="equal">=</h1>
+		<div id="mat3">
+			<div id="a3"></div>
+			<div id="b3"></div><br/>
+			<div id="c3"></div>
+			<div id="d3"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var u11 = 1;
+		var u12 = -3;
+		var u21 = 6;
+		var u22 = 5;
+		var mat2x2 = [[u11, u12],[u21, u22]];
+		
+		document.getElementById("a").innerHTML = u11;
+		document.getElementById("b").innerHTML = u12;
+		document.getElementById("c").innerHTML = u21;
+		document.getElementById("d").innerHTML = u22;
+		
+		var v11 = 2;
+		var v12 = 7;
+		var v21 = -4;
+		var v22 = 1;
+		var mat2x2 = [[v11, v12],[v21, v22]];
+		
+		document.getElementById("a2").innerHTML = v11;
+		document.getElementById("b2").innerHTML = v12;
+		document.getElementById("c2").innerHTML = v21;
+		document.getElementById("d2").innerHTML = v22;
+		
+		var w11 = u11 + v11;
+		var w12 = u12 + v12;
+		var w21 = u21 + v21;
+		var w22 = u22 + v22;
+		var mat2x2 = [[w11, w12],[w21, w22]];
+		
+		document.getElementById("a3").innerHTML = w11;
+		document.getElementById("b3").innerHTML = w12;
+		document.getElementById("c3").innerHTML = w21;
+		document.getElementById("d3").innerHTML = w22;
+	</script>
+</body>
+</html>
