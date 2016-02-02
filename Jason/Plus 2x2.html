@@ -1,0 +1,154 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Plus Matrix 2x2</title>
+	<style>
+		#panel {
+			width: 600px;
+			height: 600px;
+			background-color: purple;
+			
+		}
+		
+		form {
+			display: inline-block;
+			margin: 5px 5px;
+		}
+		
+		#form_b {
+			margin-right: 80px;
+		}
+		
+		input {
+			width: 50px;
+			height: 50px;
+		}
+		
+		#a11 {
+			margin-left: 4px;
+			margin-bottom: 4px;
+		}
+		
+		#b11 {
+			margin-left: 4px;
+			margin-bottom: 4px;
+		}
+		
+		#btn_hitung {
+			position: absolute;
+			margin-top: 52px;
+		}
+		
+		#step1 {
+			margin-top: 20px;
+			background-color: blue;
+			height: 396px;
+			border-top-right-radius: 90px;
+			border-top-left-radius: 90px;
+			border-bottom-right-radius: 90px;
+			border-bottom-left-radius: 90px;
+			font-size: 50px;
+			display: none;
+		}
+		
+		#prev {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			margin-top: 320px;
+			margin-left: -450px;
+			display: none;
+		}
+		
+		#next {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			margin-top: 320px;
+			margin-left: 65px;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			
+			$("#btn_hitung").click(function() {
+				var a11h = parseInt(document.getElementById("a11").value);
+				var a12h = document.getElementById("a12").value;
+				var a21h = document.getElementById("a21").value;
+				var a22h = document.getElementById("a22").value;
+				var b11h = parseInt(document.getElementById("b11").value);
+				var b12h = document.getElementById("b12").value;
+				var b21h = document.getElementById("b21").value;
+				var b22h = document.getElementById("b22").value;
+				
+				var c11h = a11h + b11h;
+				document.getElementById("step1").innerHTML = a11h +  "+" + b11h + "=" + c11h;
+				
+				$("#step1").fadeIn();
+				$("#prev").fadeIn();
+				$("#next").fadeIn();
+				//$("#frame2").css({"background-color": "#515151"});
+			});
+			
+		});
+		
+	</script>
+	
+</head>
+<body>
+	<center>
+	<div id="panel">
+		<h1>M(2x2) + M(2x2)</h1>
+		<form id="form_a" action="" method="get">
+			<input type="text"
+					id="a11"
+					value="" 
+					placeholder="a11"/>
+			<input type="text"
+					id="a12"
+					value="" 
+					placeholder="a12"/>
+			<br/>
+			<input type="text"
+					id="a21"
+					value="" 
+					placeholder="a21"/>
+			<input type="text"
+					id="a22"
+					value="" 
+					placeholder="a22"/>
+		</form>
+		<form id="form_b" action="" method="get">
+			<input type="text"
+					id="b11"
+					value="" 
+					placeholder="b11"/>
+			<input type="text"
+					id="b12"
+					value="" 
+					placeholder="b12"/>
+			<br/>
+			<input type="text"
+					id="b21"
+					value="" 
+					placeholder="b21"/>
+			<input type="text"
+					id="b22"
+					value="" 
+					placeholder="b22"/>
+		</form>
+		<button id="btn_hitung">Hitung</button>
+		<button id="prev"><</button>
+		<button id="next">></button>
+		<div id="step1">
+	
+		</div>
+	</div>
+	
+	</center>
+	
+</body>
+</html>
