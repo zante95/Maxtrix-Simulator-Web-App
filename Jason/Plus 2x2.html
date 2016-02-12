@@ -48,7 +48,120 @@
 			border-bottom-right-radius: 90px;
 			border-bottom-left-radius: 90px;
 			font-size: 50px;
-			display: none;
+			display: none; <!-- none -->
+		}
+		
+		#s1a {
+			width: 120px;
+			height: 120px;
+			border: 1px solid yellow;
+			position: absolute;
+			margin-top: 137px;
+			margin-left: 90px;
+		}
+		
+		#s1a div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid yellow;
+		}
+		
+		#s1a11 {
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		#s1a12 {
+			display: inline-block;
+		}
+		
+		#s1a21 {
+			display: inline-block;
+		}
+		
+		#s1a22 {
+			display: inline-block;
+		}
+		
+		#s1plus {
+			border: 1px solid red;
+			position: absolute;
+			margin-top: 170px;
+			margin-left: -89px;
+		}
+		
+		#s1b {
+			width: 120px;
+			height: 120px;
+			border: 1px solid yellow;
+			position: absolute;
+			margin-top: 137px;
+			margin-left: 240px;
+		}
+		
+		#s1b div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid yellow;
+		}
+		
+		#s1b11 {
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		#s1b12 {
+			display: inline-block;
+		}
+		
+		#s1b21 {
+			display: inline-block;
+		}
+		
+		#s1b22 {
+			display: inline-block;
+		}
+		
+		#s1equals {
+			border: 1px solid red;
+			position: absolute;
+			margin-top: 170px;
+			margin-left: 61px;
+		}
+		
+		#s1c {
+			width: 120px;
+			height: 120px;
+			border: 1px solid yellow;
+			position: absolute;
+			margin-top: 137px;
+			margin-left: 390px;
+		}
+		
+		#s1c div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid yellow;
+		}
+		
+		#s1c11 {
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		#s1c12 {
+			display: inline-block;
+		}
+		
+		#s1c21 {
+			display: inline-block;
+		}
+		
+		#s1c22 {
+			display: inline-block;
 		}
 		
 		#prev {
@@ -85,7 +198,16 @@
 				var b22h = document.getElementById("b22").value;
 				
 				var c11h = a11h + b11h;
-				document.getElementById("step1").innerHTML = a11h +  "+" + b11h + "=" + c11h;
+				
+				document.getElementById("s1a11").innerHTML = a11h;
+				document.getElementById("s1a12").innerHTML = a12h;
+				document.getElementById("s1a21").innerHTML = a21h;
+				document.getElementById("s1a22").innerHTML = a22h;
+				document.getElementById("s1b11").innerHTML = b11h;
+				document.getElementById("s1b12").innerHTML = b12h;
+				document.getElementById("s1b21").innerHTML = b21h;
+				document.getElementById("s1b22").innerHTML = b22h;
+				document.getElementById("s1c11").innerHTML = c11h;
 				
 				$("#step1").fadeIn();
 				$("#prev").fadeIn();
@@ -144,7 +266,29 @@
 		<button id="prev"><</button>
 		<button id="next">></button>
 		<div id="step1">
-	
+			<div id="s1a">
+				<div id="s1a11"></div>
+				<div id="s1a12"></div>
+				<br/>
+				<div id="s1a21"></div>
+				<div id="s1a22"></div>
+			</div>
+			<label id="s1plus">+</label>
+			<div id="s1b">
+				<div id="s1b11"></div>
+				<div id="s1b12"></div>
+				<br/>
+				<div id="s1b21"></div>
+				<div id="s1b22"></div>
+			</div>
+			<label id="s1equals">=</label>
+			<div id="s1c">
+				<div id="s1c11"></div>
+				<div id="s1c12"></div>
+				<br/>
+				<div id="s1c21"></div>
+				<div id="s1c22"></div>
+			</div>
 		</div>
 	</div>
 	
