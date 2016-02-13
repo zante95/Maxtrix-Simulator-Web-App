@@ -39,6 +39,8 @@
 			margin-top: 52px;
 		}
 		
+		
+		<!-- Step 1 -->
 		#step1 {
 			margin-top: 20px;
 			background-color: blue;
@@ -164,6 +166,133 @@
 			display: inline-block;
 		}
 		
+		<!-- Step 2 
+		#step2 {
+			margin-top: 20px;
+			background-color: blue;
+			height: 396px;
+			border-top-right-radius: 90px;
+			border-top-left-radius: 90px;
+			border-bottom-right-radius: 90px;
+			border-bottom-left-radius: 90px;
+			font-size: 50px;
+			display: none;
+		}
+		
+		#s2a {
+			width: 120px;
+			height: 120px;
+			border: 1px solid yellow;
+			position: absolute;
+			margin-top: 137px;
+			margin-left: 90px;
+			
+		}
+		
+		#s2a div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid yellow;
+		}
+		
+		#s2a11 {
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		#s2a12 {
+			display: inline-block;
+		}
+		
+		#s2a21 {
+			display: inline-block;
+		}
+		
+		#s2a22 {
+			display: inline-block;
+		}
+		
+		#s2plus {
+			border: 1px solid red;
+			position: absolute;
+			margin-top: 170px;
+			margin-left: -89px;
+		}
+		
+		#s2b {
+			width: 120px;
+			height: 120px;
+			border: 1px solid yellow;
+			position: absolute;
+			margin-top: 137px;
+			margin-left: 240px;
+		}
+		
+		#s2b div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid yellow;
+		}
+		
+		#s2b11 {
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		#s2b12 {
+			display: inline-block;
+		}
+		
+		#s2b21 {
+			display: inline-block;
+		}
+		
+		#s2b22 {
+			display: inline-block;
+		}
+		
+		#s2equals {
+			border: 1px solid red;
+			position: absolute;
+			margin-top: 170px;
+			margin-left: 61px;
+		}
+		
+		#s2c {
+			width: 120px;
+			height: 120px;
+			border: 1px solid yellow;
+			position: absolute;
+			margin-top: 137px;
+			margin-left: 390px;
+		}
+		
+		#s2c div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid yellow;
+		}
+		
+		#s2c11 {
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		#s2c12 {
+			display: inline-block;
+		}
+		
+		#s2c21 {
+			display: inline-block;
+		}
+		
+		#s2c22 {
+			display: inline-block;
+		}
+		-->
 		#prev {
 			position: absolute;
 			width: 50px;
@@ -210,11 +339,19 @@
 				document.getElementById("s1c11").innerHTML = c11h;
 				
 				$("#step1").fadeIn();
-				$("#prev").fadeIn();
 				$("#next").fadeIn();
-				//$("#frame2").css({"background-color": "#515151"});
+				
+				//var next_counter = 0;
 			});
 			
+		/*	$("#next").click(function() {
+				if(next_counter == 0) {
+					$("#step1").fadeOut();
+					$("#step2").fadeIn();
+				}
+				next_counter++;
+			})
+		*/	
 		});
 		
 	</script>
@@ -290,6 +427,31 @@
 				<div id="s1c22"></div>
 			</div>
 		</div>
+<!--		<div id="step2">
+			<div id="s2a">
+				<div id="s2a11"></div>
+				<div id="s2a12"></div>
+				<br/>
+				<div id="s2a21"></div>
+				<div id="s2a22"></div>
+			</div>
+			<label id="s2plus">+</label>
+			<div id="s2b">
+				<div id="s2b11"></div>
+				<div id="s2b12"></div>
+				<br/>
+				<div id="s2b21"></div>
+				<div id="s2b22"></div>
+			</div>
+			<label id="s2equals">=</label>
+			<div id="s2c">
+				<div id="s2c11"></div>
+				<div id="s2c12"></div>
+				<br/>
+				<div id="s2c21"></div>
+				<div id="s2c22"></div>
+			</div>
+		</div>-->
 	</div>
 	
 	</center>
