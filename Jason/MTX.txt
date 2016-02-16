@@ -1,0 +1,17 @@
+tambah A+B, 2x2, 3x3
+
+kurang A-B, B-A
+
+kali A*B
+	B*A
+
+Identitas (2x2, 3x3)
+
+Determinan (sarrus 3x3, 2x2)
+
+invers (bujur sangkar)
+1(adj)/det 
+
+adj = mat kofaktor -> determinan yg dicoret
+
+mat transpose (2x2 - 3x3)
